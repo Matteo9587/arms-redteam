@@ -5,7 +5,7 @@ Red Team **agentique** de **5 agents IA autonomes** (Vercel AI SDK 7) qui met à
 > Atelier pratique « Conformité et finance agentique — Mise à l'épreuve des systèmes » (Epitalab 2026). Contexte de l'exercice : après l'entrée en vigueur de l'EU AI Act, le COMEX de BNP Paribas veut s'assurer qu'ARMS est prêt avant sa mise en production.
 > **Exercice pédagogique** : ARMS est reproduit par un **jumeau numérique déterministe** (`lib/arms/`). Aucun système réel n'est ciblé et les fournisseurs sont fictifs.
 
-**Dépôt** : https://github.com/Matteo9587/arms-redteam
+**Auteur** : Mattéo Martins · **Dépôt** : https://github.com/Matteo9587/arms-redteam
 
 📊 **Diapositives (3)** : [`docs/Red-Team-ARMS-diapositives.pdf`](docs/Red-Team-ARMS-diapositives.pdf)
 
