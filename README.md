@@ -7,6 +7,12 @@ Red Team **agentique** de **5 agents IA autonomes** (Vercel AI SDK 7) qui met à
 
 **Dépôt** : https://github.com/Matteo9587/arms-redteam
 
+## 🎬 Vidéo de démonstration (1 min 53)
+
+[![Console ARMS Red Team pendant l'attaque](docs/demo-preview.png)](docs/demo.mp4)
+
+▶ **[Regarder la démo : `docs/demo.mp4`](docs/demo.mp4)** (le fichier se lit dans GitHub, ou [en téléchargement direct](https://github.com/Matteo9587/arms-redteam/raw/main/docs/demo.mp4)). La console rejoue la campagne réelle des 5 agents, avec la réaction d'ARMS en temps réel, les résultats et la conclusion.
+
 <!-- RESULTS:START -->
 ## ⚡ Résultats de la campagne complète (5 agents, 270 s, `nvidia/nemotron-3.5-super-vl:free`)
 
@@ -151,5 +157,5 @@ Le calcul est fait par du code déterministe (`lib/agents/scoring.ts`) : l'agent
 ## 8. Livrables
 
 - 📊 Diapositives (3) : architecture, scénario et point de rupture, synthèse (version HTML : [`docs/slides/`](docs/slides/index.html))
-- 🎬 Script de la vidéo de démonstration : [`docs/DEMO.md`](docs/DEMO.md)
+- 🎬 Vidéo de démonstration : [`docs/demo.mp4`](docs/demo.mp4) · script pour une présentation orale : [`docs/DEMO.md`](docs/DEMO.md)
 - 📄 Exemple de rapport généré : [`docs/sample-report.md`](docs/sample-report.md)
