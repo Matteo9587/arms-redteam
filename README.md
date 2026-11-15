@@ -2,10 +2,12 @@
 
 Red Team **agentique** de **5 agents IA autonomes** (Vercel AI SDK 7) qui met à l'épreuve **ARMS** (*Agentic Risk Monitoring System*), le système de surveillance LCB-FT et fraude d'une banque, avant sa mise en production, au regard de **DORA**, **MiCA**, de l'**AI Act** (et du RGPD / LCB-FT).
 
-> Atelier pratique « Conformité et finance agentique — Mise à l'épreuve des systèmes » (Epitalab 2026).
+> Atelier pratique « Conformité et finance agentique — Mise à l'épreuve des systèmes » (Epitalab 2026). Contexte de l'exercice : après l'entrée en vigueur de l'EU AI Act, le COMEX de BNP Paribas veut s'assurer qu'ARMS est prêt avant sa mise en production.
 > **Exercice pédagogique** : ARMS est reproduit par un **jumeau numérique déterministe** (`lib/arms/`). Aucun système réel n'est ciblé et les fournisseurs sont fictifs.
 
 **Dépôt** : https://github.com/Matteo9587/arms-redteam
+
+📊 **Diapositives (3)** : [`docs/Red-Team-ARMS-diapositives.pdf`](docs/Red-Team-ARMS-diapositives.pdf)
 
 ## 🎬 Vidéo de démonstration (1 min 53)
 
@@ -156,6 +158,6 @@ Le calcul est fait par du code déterministe (`lib/agents/scoring.ts`) : l'agent
 
 ## 8. Livrables
 
-- 📊 Diapositives (3) : architecture, scénario et point de rupture, synthèse (version HTML : [`docs/slides/`](docs/slides/index.html))
+- 📊 Diapositives (3) : architecture, scénario et point de rupture, synthèse — **[PDF : `docs/Red-Team-ARMS-diapositives.pdf`](docs/Red-Team-ARMS-diapositives.pdf)** (source HTML : [`docs/slides/`](docs/slides/index.html))
 - 🎬 Vidéo de démonstration : [`docs/demo.mp4`](docs/demo.mp4) · script pour une présentation orale : [`docs/DEMO.md`](docs/DEMO.md)
 - 📄 Exemple de rapport généré : [`docs/sample-report.md`](docs/sample-report.md)
