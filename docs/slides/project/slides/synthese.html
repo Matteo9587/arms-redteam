@@ -1,0 +1,37 @@
+<section id="synthese" class="slide">
+<p class="eyebrow">3 · Synthèse et conclusions</p>
+<h2 class="title">ARMS n’est pas prêt pour la production</h2>
+<div class="synth">
+<div class="panel">
+<h3>Impact mesuré (agent 5)</h3>
+<div class="score-row"><p class="score">0,72</p><p class="score-label">Risque critique</p></div>
+<p class="kpi-l">Perte probable estimée : <b>10,1 M€</b> (pertes, remédiation, amendes probables)</p>
+<div class="kpi-grid">
+<div><p class="kpi-v">17 / 18</p><p class="kpi-l">actions malveillantes non détectées</p></div>
+<div><p class="kpi-v">0</p><p class="kpi-l">alerte SIEM pendant l’attaque</p></div>
+<div><p class="kpi-v">92 → 53 %</p><p class="kpi-l">détection de la structuration</p></div>
+<div><p class="kpi-v">100 %</p><p class="kpi-l">disponibilité : attaque silencieuse</p></div>
+</div>
+</div>
+<div class="right">
+<div class="flaws">
+<p class="eyebrow">Failles concrètes, classées par score</p>
+<p><b>0,81 · IA empoisonnée</b> — 39 labels falsifiés via le LLM de triage, réentraînement sans validation <span class="hl">(AI Act art. 10, 14, 15)</span></p>
+<p><b>0,74 · Webhook crypto</b> — rejeu et signature forgée acceptés, 574 000 € crédités <span class="hl">(DORA art. 9, MiCA art. 75)</span></p>
+<p><b>0,68 · Prix et seuil R1</b> — OraclePrice non signé à source unique, 72 000 € sortis sous le seuil <span class="hl">(MiCA art. 92, TFR)</span></p>
+<p><b>0,56 · Détection</b> — écart vu à +13,8 h, aucune notification ACPR <span class="hl">(DORA art. 10, 17-19)</span></p>
+<p><b>0,34–0,51 · Gouvernance</b> — tiers hors registre, KYC envoyé aux États-Unis, logs de 30 jours <span class="hl">(DORA art. 28, RGPD art. 44, AI Act art. 12)</span></p>
+</div>
+<div class="recos">
+<p class="eyebrow">Recommandations</p>
+<p><b>Immédiat</b> · quarantaine humaine des labels, déploiement champion/challenger</p>
+<p><b>Immédiat</b> · webhooks en blocage strict : nonce, horodatage, anti-rejeu</p>
+<p><b>30 jours</b> · détection temps réel au SIEM, notification ACPR sous 4 h</p>
+<p><b>30 jours</b> · prix signés multi-sources (écart ±5 %), revue humaine du LLM</p>
+<p><b>90 jours</b> · registre DORA, sorties testées, CCT signées, logs ≥ 6 mois</p>
+</div>
+</div>
+</div>
+<div class="footer"><p>Code source et rapport complet : github.com/Matteo9587/arms-redteam</p><p class="pagenum"></p></div>
+<aside>Conclusion. L’agent Impact calcule un score explicite : impact (40 % finance, 35 % réglementaire, 25 % réputation) multiplié par une combinaison de probabilité et d’indétectabilité. Le score global est de 0,72, soit un risque critique, pour une perte probable d’environ 10 millions d’euros. Sur 18 actions malveillantes, ARMS n’en détecte qu’une : le transfert vers un wallet sanctionné. Les failles prioritaires sont l’empoisonnement de l’IA par sa boucle de feedback (AI Act articles 10, 14 et 15), le webhook crypto non authentifié (DORA article 9, MiCA article 75), le flux de prix manipulable qui permet de contourner le seuil LCB-FT, l’absence de détection temps réel et de notification ACPR (DORA articles 10 et 17 à 19), et enfin la gouvernance des tiers, des données et des journaux. Recommandations : en immédiat, une quarantaine humaine des labels et des webhooks en blocage strict ; à 30 jours, une détection temps réel avec notification sous 4 heures et des prix multi-sources ; à 90 jours, un registre DORA complet, des stratégies de sortie testées, des clauses contractuelles types signées et une conservation des journaux d’au moins 6 mois. Le code des agents est sur GitHub et se relance en une commande.</aside>
+</section>

@@ -1,0 +1,20 @@
+<section id="architecture" class="slide">
+<p class="eyebrow">1 · Architecture de la Red Team</p>
+<h2 class="title">5 agents IA autonomes orchestrés contre ARMS</h2>
+<p class="lede">Chaque agent est un <b>ToolLoopAgent</b> (Vercel AI SDK 7) doté de ses propres outils. Il rend un rapport structuré (schéma zod) transmis aux agents suivants, et tous agissent sur le même jumeau numérique d’ARMS.</p>
+<div class="flow">
+<div class="agent"><p class="tag">Agent 1</p><h3>Reconnaissance</h3><p class="role">Cartographie flux, fournisseurs et points d’entrée</p><p class="out">→ carte d’attaque</p></div>
+<x-shape kind="arrow-right" class="arrow"></x-shape>
+<div class="stack">
+<div class="agent"><p class="tag red">Agent 2</p><h3>Attaquant</h3><p class="role">Rejeu de webhooks, signature forgée, prix manipulé</p><p class="out">→ journal d’attaques</p></div>
+<div class="agent"><p class="tag violet">Agent 3</p><h3>IA Adversaire</h3><p class="role">Évasion, injection de prompt, empoisonnement</p><p class="out">→ dégradation mesurée</p></div>
+</div>
+<x-shape kind="arrow-right" class="arrow"></x-shape>
+<div class="agent"><p class="tag amber">Agent 4</p><h3>Compliance Breaker</h3><p class="role">Preuves × articles DORA, MiCA, AI Act, RGPD</p><p class="out">→ registre des écarts</p></div>
+<x-shape kind="arrow-right" class="arrow"></x-shape>
+<div class="agent"><p class="tag green">Agent 5</p><h3>Impact &amp; Risk Scoring</h3><p class="role">Pertes, risque réglementaire, réputation</p><p class="out">→ score 0–1 + priorités</p></div>
+</div>
+<div class="target"><x-icon name="Database"></x-icon><p><b>Cible : jumeau numérique d’ARMS (bac à sable)</b> — passerelle, connecteur crypto, flux OraclePrice, modèle LCB-FT, triage LLM, boucle de feedback, SIEM. Les traces des attaques deviennent les preuves du Compliance Breaker.</p></div>
+<div class="footer"><p>ARMS Red Team · Atelier Conformité et finance agentique</p><p class="pagenum"></p></div>
+<aside>Le COMEX veut une assurance qu’ARMS est prêt avant la production. Plutôt qu’une checklist, nous avons conçu une Red Team de 5 agents IA autonomes. Notre rôle n’est pas de jouer les agents mais de définir leur logique et d’orchestrer leurs interventions. Un orchestrateur enchaîne : la Reconnaissance cartographie l’architecture, les fournisseurs et sonde les endpoints ; elle transmet ses cibles prioritaires à l’Attaquant (scénario cyber) et à l’IA Adversaire (scénario IA/données). Ces deux agents attaquent le même jumeau numérique d’ARMS et y laissent des traces : journaux, labels empoisonnés, écarts de solde. Le Compliance Breaker confronte ces traces aux textes (DORA, MiCA, AI Act, RGPD, LCB-FT) via une base réglementaire. Enfin l’agent Impact chiffre les conséquences et calcule un score de risque explicite avec une formule déterministe.</aside>
+</section>

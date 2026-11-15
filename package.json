@@ -1,0 +1,29 @@
+{
+  "name": "arms-redteam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Red Team agentique (5 agents IA, Vercel AI SDK) qui met à l'épreuve un jumeau numérique du système ARMS face à DORA, MiCA et l'AI Act.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "redteam": "tsx scripts/redteam.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^3.0.92",
+    "ai": "^7.0.173",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9"
+  }
+}
